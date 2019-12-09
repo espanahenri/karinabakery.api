@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -12,34 +14,41 @@ namespace KarinaBakery.Models.Repositories
         {
             this.context = context;
         }
-        public Task<Bread> AddBread(Bread bread)
+        //Adds new bread to database.
+        public async Task<Bread> AddBread(Bread bread)
         {
-            throw new NotImplementedException();
+            context.Add(bread);
+            await context.SaveChangesAsync();
+            return bread;
         }
-
+        //Looks through database to check if bread exists.
         public bool BreadExists(int id)
         {
-            throw new NotImplementedException();
+            return context.Breads.Any(b => b.Id == id);
         }
 
-        public Task<List<Bread>> GetAllBread()
+        public async Task<List<Bread>> GetAllBread()
         {
-            throw new NotImplementedException();
+            return await context.Breads.ToListAsync();
         }
 
-        public Task<Bread> GetBreadById(int? id)
+        public async Task<Bread> GetBreadById(int? id)
         {
-            throw new NotImplementedException();
+            return await context.Breads.FirstOrDefaultAsync(b => b.Id == id);
         }
 
-        public Task<Bread> RemoveBread(Bread bread)
+        public async Task<Bread> RemoveBread(Bread bread)
         {
-            throw new NotImplementedException();
+            context.Remove(bread);
+            await context.SaveChangesAsync();
+            return bread;
         }
 
-        public Task<Bread> UpdateBread(Bread bread)
+        public async Task<Bread> UpdateBread(Bread bread)
         {
-            throw new NotImplementedException();
+            context.Update(bread);
+            await context.SaveChangesAsync();
+            return bread;
         }
     }
 }
