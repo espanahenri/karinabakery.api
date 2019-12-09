@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29519.87
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarinaBakery.Api", "KarinaBakery.Api\KarinaBakery.Api.csproj", "{93F70A7C-9F80-4A99-B13A-5B148E3F94E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KarinaBakery.Models", "KarinaBakery.Models\KarinaBakery.Models.csproj", "{7BFFBC0A-E887-4596-8F90-86E5456D49CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{93F70A7C-9F80-4A99-B13A-5B148E3F94E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93F70A7C-9F80-4A99-B13A-5B148E3F94E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93F70A7C-9F80-4A99-B13A-5B148E3F94E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93F70A7C-9F80-4A99-B13A-5B148E3F94E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BFFBC0A-E887-4596-8F90-86E5456D49CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BFFBC0A-E887-4596-8F90-86E5456D49CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BFFBC0A-E887-4596-8F90-86E5456D49CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BFFBC0A-E887-4596-8F90-86E5456D49CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E18EACEB-C729-42BF-B7DF-C3A15F9058EE}
+	EndGlobalSection
+EndGlobal
