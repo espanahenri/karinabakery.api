@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace KarinaBakery.Models.Repositories
 {
-    interface IBreadRepo
+    public interface IBreadRepo
     {
         public Task<List<Bread>> GetAllBread();
         public Task<Bread> GetBreadById(int? id);

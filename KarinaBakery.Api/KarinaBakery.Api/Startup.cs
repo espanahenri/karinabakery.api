@@ -30,7 +30,7 @@ namespace KarinaBakery.Api
         {
             services.AddControllers();
             services.AddDbContext<KarinaBakeryDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("KarinaBakeryDbContext")));
-            services.AddTransient<BreadRepo>();
+            services.AddTransient<IBreadRepo,BreadRepo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
